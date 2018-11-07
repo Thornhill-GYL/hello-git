@@ -1,4 +1,4 @@
-#查看文件状态，看是否更改
+﻿#查看文件状态，看是否更改
 git status
 #查看文件是否不同
 git diff a.txt(文件名)
@@ -16,4 +16,10 @@ git reset --hard 5ce(版本的序列号)
 cat a.txt
 #查看head指针指向的变化过程
 git reflog
-#在确定了版本之后，进行提交
+#撤销缓存区修改
+git checkout -- a.txt
+#删除文件
+git rm a.txt
+#恢复文件
+git reflog
+然后再利用版本号进行恢复
