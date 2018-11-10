@@ -9,6 +9,7 @@ git status
 #查看版本控制内容
 git log(从最近到最远提供的)
 git log --pretty=oneline(显示简洁信息)
+git log --pretty=oneline --abbrev-commit(将版本号更加简洁)
 #修改版本
 git reset --hard HEAD^(回退到上一版本)
 git reset --hard 5ce(版本的序列号)
